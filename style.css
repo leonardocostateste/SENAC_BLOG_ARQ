@@ -1,56 +1,110 @@
+/*  ESTILO DE PADRÕES*/
+
+html {
+    --orange:#DC552C;
+    --marinha: #404969;
+    --white: #ffff;
+}
+
 * {
     font-family: montserrat;
+    text-decoration: none;
 }
+
+/* CABAÇALHO DA PÁGINA*/
+
 .header {
     top: 0;
     width: 100%;
     padding: 1.25rem 1;
-    background-color: white;    
+    background-color: white;
 }
 
 .menu {
-    color: #404969;
-    display: flex;
+    color: var(--marinha);
+    display: flex;    
     justify-content: space-between;
     margin-left: 2rem;
-    margin-right: 2rem;
-        
+    margin-right: 2rem;   
+}
+a:hover {
+    font-weight: bold;
 }
 ul {
     display: flex;
-    text-transform: uppercase;
-    align-items: center;
-    font-weight: 500;  
 }
 
+li {
+    display: flex;
+    padding-left: 100px;
+    margin-left: 1rem;
+    font-size: large;  
+    align-items: center;
+    font-weight: 500;     
+}
+
+/* CONTEÚDO */
 
 .container1 {
     color: white;
-    background-color: #404969;
-    display: flex;
+    background-color: var(--marinha);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     align-content: center;
     color: 404969;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: var(--orange);
+    border: 5px solid var(--orange);
+    color: var(--orange);
+    text-align: center;
+    font-size: larger;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box img {
+    width: 30px;
+    height: 30px;
 }
 
 .img2 {
     border-radius: 20px;
     box-shadow: 0px 5px;
     color:#BFBFBF;
+    width: 554px;
+    height: 529px;
 }
 
 .img3 {
     border-radius: 20px;
     box-shadow: 0px 5px;
-    color:#BFBFBF;    
+    color:#BFBFBF;
+    width: 600px;
+    height: 600px;
 }
 
 .img4 {
     border-radius: 20px;
     box-shadow: 0px 5px;
-    color:#BFBFBF; 
+    color:#BFBFBF;
+    width: 600px;
+    height: 600px; 
 }
 
+.img5 {
+    border-radius: 20px;
+    box-shadow: 0px 5px;
+    color: #BFBFBF;
+    width: 600px;
+    height: 600px;
+}
 section {
     box-sizing: content-box;
     font-weight: 700;
@@ -59,14 +113,17 @@ section {
     text-transform: uppercase;
     color: white;
     font-size: 24;
-    background-color: #404969;
+    background-color: var(--marinha);
 }
 .depoimentos{
     font-size: 24px;
     font-weight: 500;
 }
+
+/* RODAPÉ */
+
 footer {    
     color: white;
-    background-color: #404969;
+    background-color: var(--marinha);
     display: flex;    
 }
