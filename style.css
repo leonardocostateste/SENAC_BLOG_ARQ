@@ -11,75 +11,136 @@ html {
     text-decoration: none;
 }
 
-/* CABAÇALHO DA PÁGINA*/
+/* CABEÇALHO DA PÁGINA*/
 
 .header {
     top: 0;
     width: 100%;
     padding: 1.25rem 1;
     background-color: white;
+    /*position: sticky;*/
 }
 
-.menu {
+.menu {    
     color: var(--marinha);
     display: flex;    
     justify-content: space-between;
-    margin-left: 2rem;
-    margin-right: 2rem;   
+    margin-right: 300px;
 }
+
+.logo {
+    width: 125px;
+    height: 125px;
+    margin-left: 250px;
+    /*transition-timing-function: ease;
+    transition-duration: 1s;*/
+}
+/*.logo:hover {
+    transform:translateX(200px)
+}*/
+
+a {
+    color: var(--marinha);
+}
+
 a:hover {
     font-weight: bold;
 }
+
 ul {
     display: flex;
 }
 
 li {
     display: flex;
-    padding-left: 100px;
-    margin-left: 1rem;
+    padding-left: 40px;
     font-size: large;  
     align-items: center;
-    font-weight: 500;     
+    font-weight: 500;    
 }
 
 /* CONTEÚDO */
 
 .container1 {
+    height: 640px;
     color: white;
     background-color: var(--marinha);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;*/
     align-items: center;
     align-content: center;
-    color: 404969;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+    padding-left: 160px;
+}
+
+.container2 {
+    margin-left: 100px;
+    margin-right: 175px;
+    height: 700px;
+    display: flex;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+    padding-left: 160px;
 }
 
 .box {
-    width: 200px;
-    height: 100px;
+    width: 280px;
+    height: 50px;
+    margin-left: 170px;
     background-color: var(--orange);
-    border: 5px solid var(--orange);
+    border-radius: 20px;
+    box-shadow: 0px 2px;
     color: var(--orange);
     text-align: center;
     font-size: larger;
-    color: white;
+    color: #BFBFBF;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    white-space: nowrap;   
+}
+
+h1 {
+    margin-left: 100px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.box h2 {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+h3, h4, h5 {
+    text-transform: uppercase;
+    color: var(--marinha);
+}
+
+h4 {
+    margin-left: 70px;
+}
+
+h6 {
+    font-size: large;
 }
 
 .box img {
     width: 30px;
     height: 30px;
+    margin-right: 10px;
 }
 
-.img2 {
+.img2 { 
+    margin-left: 250px;   
     border-radius: 20px;
     box-shadow: 0px 5px;
     color:#BFBFBF;
-    width: 554px;
-    height: 529px;
+    width: 600px;
+    height: 600px;
 }
 
 .img3 {
@@ -91,6 +152,7 @@ li {
 }
 
 .img4 {
+    margin-left: 70px;
     border-radius: 20px;
     box-shadow: 0px 5px;
     color:#BFBFBF;
@@ -105,25 +167,58 @@ li {
     width: 600px;
     height: 600px;
 }
+
 section {
+    height: 100px;
     box-sizing: content-box;
     font-weight: 700;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     text-transform: uppercase;
     color: white;
     font-size: 24;
     background-color: var(--marinha);
 }
-.depoimentos{
+
+.depoimentos {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 175px;
+    /*align-items: center;*/
+    text-align: justify;
     font-size: 24px;
     font-weight: 500;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
 }
 
 /* RODAPÉ */
 
-footer {    
+footer {
+    height: 250px;    
     color: white;
     background-color: var(--marinha);
-    display: flex;    
+    display: flex;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 250px;
+    padding-right: 100px;  
+}
+
+.logorodape {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 5px;
+    color: #BFBFBF;
+}
+
+.logoredes {
+    width: 35px;
+    height: 35px;
+    grid: flex;
+    flex-direction: column;
+    padding: 2px;
 }
